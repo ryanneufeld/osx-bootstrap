@@ -17,6 +17,15 @@
     - go
     - cowsay
     - wget
+    - nmap
+    - mutt
+    - htop
+    - irssi
+    - imagemagick
+    - htop-osx
+    - jq
+    - ettercap
+    - aspell
 
 
 - name: Install favorite packages from homebrew_cask
@@ -39,4 +48,32 @@
 - name: Install python goodies
   pip: name={{ item }} state=present
     - paramiko
-    - py-junos-nc
+    - virtualenv
+    - virtualenvwrapper
+    - six
+    - python-nmap
+    - pylibpcacp
+    - netaddr
+    - pbr
+    - ncclient
+    - lxml
+    - Jinja2
+    - PyASN
+    - PyYAML
+    - dnspython
+    - matplotlib
+    - pyOpenSSL
+    - typogrify
+    - vboxapi
+    - SQLAlchemy
+    - Fabric
+    - Flask
+    - Flask-Babel
+    - Flask-Login
+    - Flask-OpenID
+    - Flask-SQLAlchemy
+    - Flask-WTF
+    - Flask-WhooshAlchemy
+    - Markdown
+    - junos-eznc
+    - pelican
