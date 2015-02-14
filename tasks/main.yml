@@ -41,11 +41,6 @@
     - skype
     - hipchat
 
-- name: install dotfiles via git (requires private key first)
-  git: repo=git@ardberg.nyc.ipstuff.ca:cmurray/dotfiles.git
-       dest={{ home }}/src/dotfiles
-       update=no
-
 - name: Install python goodies
   pip: name={{ item }} state=present
     - paramiko
@@ -78,3 +73,7 @@
     - Markdown
     - junos-eznc
     - pelican
+
+include: local.yml
+# you'll want to comment this out...
+include: dayjob.yml

@@ -1,0 +1,28 @@
+- name: install dotfiles via git (requires private key first)
+  git: repo=git@ardberg.nyc.ipstuff.ca:cmurray/dotfiles.git
+       dest={{ home }}/src/dotfiles
+       update=no
+
+- name: creating symlinks in {{ home }} to for tmux
+  file: >
+    dest={{ home }}/.tmux.conf
+    src={{ home }}/src/dotfiles/.tmux.conf
+    state=link
+
+- name: creating symlinks in {{ home }} to for vimrc
+  file: >
+    dest={{ home }}/.vimrc
+    src={{ home }}/src/dotfiles/.vimrc
+    state=link
+
+- name: creating symlinks in {{ home }} to for tmux
+  file: >
+    dest={{ home }}/.tmux.conf
+    src={{ home }}/src/dotfiles/.tmux.conf
+    state=link
+
+- name: link .bash_profile from ~/src/dotfiles to ~/.bash_profile
+  file: >
+    dest={{ home }}/.bash_profile
+    src={{ home }}/src/dotfiles/.osx.bash_profile
+    state=link
