@@ -43,39 +43,7 @@
     - skype
     - hipchat
 
-- name: Install python goodies
-  pip: name={{ item }} state=present
-    - paramiko
-    - virtualenv
-    - virtualenvwrapper
-    - six
-    - python-nmap
-    - pylibpcacp
-    - netaddr
-    - pbr
-    - ncclient
-    - lxml
-    - Jinja2
-    - PyASN
-    - PyYAML
-    - dnspython
-    - matplotlib
-    - pyOpenSSL
-    - typogrify
-    - vboxapi
-    - SQLAlchemy
-    - Fabric
-    - Flask
-    - Flask-Babel
-    - Flask-Login
-    - Flask-OpenID
-    - Flask-SQLAlchemy
-    - Flask-WTF
-    - Flask-WhooshAlchemy
-    - Markdown
-    - junos-eznc
-    - pelican
-
+include: python.yml
 include: local.yml
 # you'll want to comment this out...
 include: dayjob.yml
