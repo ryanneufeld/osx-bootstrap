@@ -9,11 +9,11 @@
   with_items:
     - git
     - vim
-    - bgpq3
+#    - bgpq3
     - tmux
     - mtr
-    - hping3
-    - tshark
+#    - hping3
+#    - tshark
     - go
     - cowsay
     - wget
@@ -29,8 +29,9 @@
     - gnupg
 
 
-- name: Install favorite packages from homebrew_cask
-  homebrew_cask: name={{ item }} state=present
+- name: Install favorite packages from homebrew cask
+  shell: brew cask install {{ item }}
+  with_items:
     - iterm2
     - google-chrome
     - virtualbox
@@ -43,7 +44,6 @@
     - skype
     - hipchat
 
-include: python.yml
-include: local.yml
-# you'll want to comment this out...
-include: dayjob.yml
+- include: python.yml
+- include: local.yml
+- include: dayjob.yml

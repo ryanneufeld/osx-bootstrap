@@ -27,7 +27,7 @@ fi
 ## Install homebrew if it does not exist
 ##
 if [[ ! -x `which homebrew` ]]; then
-    /usb/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     # after lets install caskroom too!
 fi
 

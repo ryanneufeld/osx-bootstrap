@@ -1,11 +1,12 @@
 - name: Install python goodies
   pip: name={{ item }} state=present
+  with_items:
     - paramiko
     - virtualenv
     - virtualenvwrapper
     - six
     - python-nmap
-    - pylibpcacp
+    - pylibpcap
     - netaddr
     - pbr
     - ncclient
