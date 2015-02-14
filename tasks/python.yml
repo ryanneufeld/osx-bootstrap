@@ -6,13 +6,13 @@
     - virtualenvwrapper
     - six
     - python-nmap
-    - pylibpcap
+#    - pylibpcap
     - netaddr
     - pbr
     - ncclient
     - lxml
     - Jinja2
-    - PyASN
+#    - PyASN
     - PyYAML
     - dnspython
     - matplotlib
