@@ -1,0 +1,42 @@
+---
+- name: create standard home directory stuff
+  file: name={{ item }} state=directory
+  with_items:
+      - '{{ home }}/src'
+
+- name: Install favorite packages from homebrew
+  homebrew: name={{ item }} state=present
+  with_items:
+    - git
+    - vim
+    - bgpq3
+    - tmux
+    - mtr
+    - hping3
+    - tshark
+    - go
+    - cowsay
+    - wget
+
+
+- name: Install favorite packages from homebrew_cask
+  homebrew_cask: name={{ item }} state=present
+    - google-chrome
+    - virtualbox
+    - vagrant
+    - sublime-text
+    - transmit
+    - spotify
+    - adium
+    - vlc
+    - skype
+
+- name: install dotfiles via git (requires private key first)
+  git: repo=git@ardberg.nyc.ipstuff.ca:cmurray/dotfiles.git
+       dest={{ home }}/src/dotfiles
+       update=no
+
+- name: Install python goodies
+  pip: name={{ item }} state=present
+    - paramiko
+    - py-junos-nc
