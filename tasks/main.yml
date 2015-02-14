@@ -30,6 +30,7 @@
 
 - name: Install favorite packages from homebrew_cask
   homebrew_cask: name={{ item }} state=present
+    - iterm2
     - google-chrome
     - virtualbox
     - vagrant
