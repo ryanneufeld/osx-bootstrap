@@ -39,6 +39,7 @@
     - adium
     - vlc
     - skype
+    - hipchat
 
 - name: install dotfiles via git (requires private key first)
   git: repo=git@ardberg.nyc.ipstuff.ca:cmurray/dotfiles.git
