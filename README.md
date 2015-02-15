@@ -13,6 +13,10 @@ CPPFLAGS=-Qunused-arguments
 
 it worked...
 
+todo
+----
+- playbook to clone all of my repos for work and personal projects.
+
 Comments, Questions, Concerns: chris[at]ipstuff[dot]ca
 
 Thanks to Matthew Valentine-House: http://www.eightbitraptor.com/post/bootstrapping-osx-ansible for the template and the inspiration to finally do this.
