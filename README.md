@@ -7,6 +7,12 @@ Requires ansible and any local dependencies you may require. (SSH Keys for githu
 
 This is best run on fresh OSX machines.
 
+I've found that a bunch of the python modules didn't build first go around, once I ran as root with:
+CFLAGS=-Qunused-arguments 
+CPPFLAGS=-Qunused-arguments
+
+it worked...
+
 Comments, Questions, Concerns: chris[at]ipstuff[dot]ca
 
 Thanks to Matthew Valentine-House: http://www.eightbitraptor.com/post/bootstrapping-osx-ansible for the template and the inspiration to finally do this.
