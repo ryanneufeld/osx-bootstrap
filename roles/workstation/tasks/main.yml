@@ -45,5 +45,5 @@
     - hipchat
 
 - include: python.yml
-- include: local.yml
+#- include: local.yml
 - include: dayjob.yml
