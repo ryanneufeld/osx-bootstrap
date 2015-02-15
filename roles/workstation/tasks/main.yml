@@ -9,15 +9,13 @@
   with_items:
     - git
     - vim
-#    - bgpq3
     - tmux
     - mtr
-#    - hping3
-#    - tshark
     - go
     - cowsay
     - wget
     - nmap
+    - hping
     - mutt
     - htop
     - irssi
@@ -27,6 +25,9 @@
     - ettercap
     - aspell
     - gnupg
+    - mosh
+    - bgpq3
+    - wireshark
 
 
 - name: Install favorite packages from homebrew cask
