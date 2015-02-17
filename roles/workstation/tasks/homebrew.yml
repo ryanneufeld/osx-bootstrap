@@ -1,0 +1,40 @@
+- name: Install favorite packages from homebrew
+  homebrew: name={{ item }} state=present
+  with_items:
+    - git
+    - vim
+    - tmux
+    - mtr
+    - go
+    - cowsay
+    - wget
+    - nmap
+    - hping
+    - mutt
+    - htop
+    - irssi
+    - imagemagick
+    - htop-osx
+    - jq
+    - ettercap
+    - aspell
+    - gnupg
+    - mosh
+    - bgpq3
+    - wireshark
+
+
+- name: Install favorite packages from homebrew cask
+  shell: brew cask install {{ item }}
+  with_items:
+    - iterm2
+    - google-chrome
+    - virtualbox
+    - vagrant
+    - sublime-text
+    - transmit
+    - spotify
+    - adium
+    - vlc
+    - skype
+    - hipchat
