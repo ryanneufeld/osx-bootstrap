@@ -7,5 +7,5 @@
 
 - include: homebrew.yml
 - include: python.yml
-#- include: local.yml
+- include: local.yml
 - include: dayjob.yml
