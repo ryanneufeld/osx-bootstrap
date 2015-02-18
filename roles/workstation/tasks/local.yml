@@ -28,3 +28,6 @@
     dest={{ home }}/.bash_profile
     src={{ home }}/src/dotfiles/.osx.bash_profile
     state=link
+
+- name: set mtr to suid root so we don't have to use sudo
+  file: path=/usr/local/sbin/mtr state=touch owner=root group=wheel mode="u+s"
