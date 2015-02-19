@@ -3,9 +3,22 @@ Ansible For OSX system bootstrap
 
 Runs on the local host, doesn't need ssh. This makes it faster.
 
-Requires ansible and any local dependencies you may require. (SSH Keys for github, etc). note that bootstrap.sh will install ansible+homebrew for you. 
-
 This is best run on fresh OSX machines.
+
+requirements:
+----
+- git
+- xcode command line tools. (OSX should prompt to install when you run git for the first time.
+- private key in ~/.ssh/ (required if you use public key auth to github).
+- python (OSX default version is OK)
+
+note: ansible/homebrew/caskroom will be installed by bootstrap.sh
+
+usage:
+----
+```sh
+./bootstrap.sh
+```
 
 caveants
 ----
