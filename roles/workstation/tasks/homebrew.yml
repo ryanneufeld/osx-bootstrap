@@ -22,6 +22,7 @@
     - mosh
     - bgpq3
     - wireshark
+    - git-cal
 
 
 - name: Install favorite packages from homebrew cask
