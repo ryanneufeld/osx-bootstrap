@@ -30,5 +30,6 @@
     - Flask-WhooshAlchemy
     - Markdown
     - junos-eznc
+    - pylint
     - pelican
 
