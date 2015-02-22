@@ -23,6 +23,7 @@
     - bgpq3
     - wireshark
     - git-cal
+    - npm
 
 
 - name: Install favorite packages from homebrew cask
