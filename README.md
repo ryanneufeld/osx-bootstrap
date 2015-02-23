@@ -20,13 +20,6 @@ usage:
 ./bootstrap.sh
 ```
 
-caveants
-----
-I've found that a bunch of the python modules didn't build first go around, once I ran as root with:
-CFLAGS=-Qunused-arguments 
-CPPFLAGS=-Qunused-arguments
-
-it worked...
 
 todo
 ----
