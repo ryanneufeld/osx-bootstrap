@@ -24,6 +24,7 @@
     - wireshark
     - git-cal
     - npm
+    - ipcalc
 
 
 - name: Install favorite packages from homebrew cask
