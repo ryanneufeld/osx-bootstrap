@@ -19,7 +19,7 @@ if [[ ! -x `which pip` ]]; then
 fi
 
 ## set CLFAGS and CPPFLAGS, needed for some installs.
-##
+## not sure if this is needed
 if [[ -x `which pip` && ! -x `which ansible` ]]; then
     sudo CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install ansible
 fi
