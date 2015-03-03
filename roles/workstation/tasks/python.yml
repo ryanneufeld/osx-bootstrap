@@ -2,6 +2,7 @@
   pip: name={{ item }} state=present
   with_items:
     - paramiko
+    - simple-json
     - virtualenv
     - virtualenvwrapper
     - six
@@ -32,4 +33,5 @@
     - junos-eznc
     - pylint
     - pelican
+    - boto
 
