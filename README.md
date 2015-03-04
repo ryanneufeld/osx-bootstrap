@@ -11,6 +11,7 @@ requirements:
 - xcode command line tools. (OSX should prompt to install when you run git for the first time.
 - private key in ~/.ssh/ (required if you use public key auth to github).
 - python (OSX default version is OK)
+- sudo / admin access on the host.
 
 note: ansible/homebrew/caskroom will be installed by bootstrap.sh
 
