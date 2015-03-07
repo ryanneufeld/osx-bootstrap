@@ -6,6 +6,8 @@
     - tmux
     - mtr
     - go
+    - hg
+    - bzr
     - cowsay
     - wget
     - nmap
