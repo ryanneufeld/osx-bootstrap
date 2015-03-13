@@ -33,5 +33,6 @@
     - junos-eznc
     - pylint
     - pelican
+    - awscli 
     - boto
 
