@@ -16,6 +16,7 @@
     - htop
     - irssi
     - imagemagick
+    - tcptraceroute
     - htop-osx
     - jq
     - ettercap
