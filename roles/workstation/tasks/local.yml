@@ -31,3 +31,6 @@
 
 - name: set mtr to suid root so we don't have to use sudo
   file: path=/usr/local/sbin/mtr state=touch owner=root group=wheel mode="u+s"
+
+- name: set tcptraceroute to suid root so we don't have to use sudo
+  file: path=/usr/local/bin/tcptraceroute state=touch owner=root group=wheel mode="u+s"
