@@ -35,4 +35,5 @@
     - pelican
     - awscli 
     - boto
+    - trigger
 
