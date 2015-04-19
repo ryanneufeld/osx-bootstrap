@@ -36,6 +36,7 @@
     - awscli 
     - boto
     - pytz
+    - python-dateutil
     - trigger
     - htmlparser
 
