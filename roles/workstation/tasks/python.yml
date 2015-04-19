@@ -35,6 +35,7 @@
     - pelican
     - awscli 
     - boto
+    - pytz
     - trigger
     - htmlparser
 
