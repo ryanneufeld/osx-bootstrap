@@ -35,6 +35,9 @@
     - pelican
     - awscli 
     - boto
+    - pytz
+    - python-dateutil
     - trigger
     - SOAPpy
+    - htmlparser
 
