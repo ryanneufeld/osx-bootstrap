@@ -40,4 +40,5 @@
     - trigger
     - SOAPpy
     - htmlparser
+    - prettytable
 
