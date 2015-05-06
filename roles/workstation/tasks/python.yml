@@ -36,4 +36,5 @@
     - awscli 
     - boto
     - trigger
+    - SOAPpy
 
