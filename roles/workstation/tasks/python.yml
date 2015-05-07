@@ -42,4 +42,5 @@
     - htmlparser
     - prettytable
     - jaide
+    - httplib2
 
