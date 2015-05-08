@@ -30,6 +30,7 @@
     - git-cal
     - npm
     - ipcalc
+    - tig
 
 
 - name: Install favorite packages from homebrew cask
