@@ -43,4 +43,5 @@
     - prettytable
     - jaide
     - httplib2
+    - speedtest-cli
 
