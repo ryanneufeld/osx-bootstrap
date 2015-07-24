@@ -44,4 +44,7 @@
     - jaide
     - httplib2
     - speedtest-cli
+    - django
+    - django-bootstrap3
+    - geoip2
 
