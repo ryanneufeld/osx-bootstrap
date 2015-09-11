@@ -4,7 +4,6 @@
     - git
     - python
     - vim
-    - macvim
     - tmux
     - mtr
     - go
@@ -37,7 +36,6 @@
   shell: brew cask install {{ item }}
   with_items:
     - iterm2
-    - google-chrome
     - virtualbox
     - vagrant
     - terraform
